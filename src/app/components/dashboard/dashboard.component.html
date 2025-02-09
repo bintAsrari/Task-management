@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Task Dashboard</h2>
+    <button (click)="addTask()">Add Task</button>
+    <table>
+        <tr *ngFor="let task of tasks">
+            <td>{{ task.title }}</td>
+            <td>{{ task.description }}</td>
+            <td>{{ task.status }}</td>
+            <td><button (click)="deleteTask(task.id)">Delete</button></td>
+        </tr>
+    </table>
+</div>

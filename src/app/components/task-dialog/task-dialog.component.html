@@ -1,0 +1,17 @@
+<h2>Add New Task</h2>
+<form (submit)="saveTask()">
+  <mat-form-field>
+    <input matInput placeholder="Task Title" [(ngModel)]="task.title">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput placeholder="Description" [(ngModel)]="task.description"></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Status" [(ngModel)]="task.status">
+      <mat-option value="PENDING">Pending</mat-option>
+      <mat-option value="IN_PROGRESS">In Progress</mat-option>
+      <mat-option value="COMPLETED">Completed</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-raised-button color="primary">Save</button>
+</form>

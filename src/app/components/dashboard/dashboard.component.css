@@ -1,0 +1,21 @@
+.table-container {
+    margin: 20px;
+  }
+  
+  .spacer {
+    flex: 1;
+  }
+  
+  mat-sidenav {
+    width: 200px;
+    background: #f4f4f4;
+  }
+  
+  mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  mat-chip {
+    font-weight: bold;
+  }
